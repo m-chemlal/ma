@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.data
+.DS_Store
+.data/
+data/*.json
+data/*.jsonl
+data/scans/
+data/alerts/
+data/responses/
