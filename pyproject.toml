@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trusted-ai-soc-lite"
+version = "0.1.0"
+description = "Prototype d'un SOC autonome et explicable combinant Nmap, IA et Streamlit."
+authors = [{name = "Trusted AI"}]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+dashboard = ["streamlit", "pandas"]
+nmap = ["python-nmap"]
+explainability = ["shap"]
+dev = ["black", "ruff"]
+
+[project.scripts]
+trusted-ai-soc-lite = "trusted_ai_soc_lite.__main__:main"
